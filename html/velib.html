@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Velib</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <link href="../css/velib.css" rel="stylesheet" type="text/css" />
+        <link href="../jquery/jquery-ui.css" rel="stylesheet" type="text/css" />
+        <script src="../jquery/jquery.js"></script>
+        <script src="../jquery/jquery-ui.js"></script>
+
+
+
+    </head>
+
+    <body>
+        <div id="map"></div>
+        <p id="pMessage"></p>
+        <p id="pListes">
+            <input type="text" id="saisieAdresse" name="saisieAdresse" placeholder="saisir l'adresse">
+            <br>
+            <select id="listeStationsVelibParAdresse" name="listeStationsVelibParAdresse" size="10">
+            </select>
+            <select id="listeStationsVelibProches" name="listeStationsVelibProches" size="10">
+            </select>
+        </p>
+        <p id="pLabelMessage">
+            <label id="lblMessage"></label>
+        </p>
+        <input type="hidden" id="ithLat" />
+        <input type="hidden" id="ithLng" />
+        <script src="http://maps.google.com/maps/api/js?key=AIzaSyD07327vXN54GrtvToNdXXAMWGa-C-AnUI&libraries=weather"></script>
+        <script src="../js/velib.js"></script>
+
+    </body>
+</html>
